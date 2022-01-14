@@ -21,6 +21,8 @@
             font-weight: bold;
             font-size: 20px;
             text-shadow: 0 0 2px #db0708;
+            opacity: 0;
+            transition: all .5s;
         }
     </style>
 </head>
@@ -29,5 +31,10 @@
         信仰者，获得庇护和力量；
         亵渎者，付出代价与生命。
     </div>
+    <sctipt>
+        document.getElementById('mirror').addEventListener('click',() => {
+            document.getElementById('mirror').style.opacity = 100
+        })
+    </script>
 </body>
 </html>
